@@ -1,16 +1,783 @@
 {
-  "posts":[
+  "security": {
+    "isTrustedUser": true,
+    "captchaCode": "123",
+    "captchaCounter": 0
+  },
+  "tasks": [
     {
-      "id" : 0,
-      "title": "First post!",
-      "content" : "My first content!"
+      "id": 1,
+      "done": false,
+      "title": "Task title"
+    },
+    {
+      "id": 3,
+      "done": true,
+      "title": "Task3 title"
+    },
+    {
+      "id": "6",
+      "done": "true",
+      "title": "ttt"
     }
   ],
-  "comments" : [
+  "auth": {
+    "id": 1,
+    "login": "Ivan",
+    "email": "____@ya.ru",
+    "resultCode": 1,
+    "isAuth": true
+  },
+  "logIn": {
+    "login": "Ivan",
+    "password": "123"
+  },
+  "profile": [
     {
-      "id": 0,
-      "content": "Wow such content!",
-      "username": "zero_cool"
+      "id": 1,
+      "lookingForAJob": true,
+      "lookingForAJobDescription": "web",
+      "contacts": {
+        "github": "github",
+        "facebook": "facebook",
+        "vk": "SonicWZ@yandex.ru"
+      },
+      "photos": {
+        "small": "small.jpg",
+        "large": null
+      },
+      "fullName": "Владимир"
+    },
+    {
+      "id": 2,
+      "lookingForAJob": true,
+      "lookingForAJobDescription": "web2",
+      "fullName": "Peter Petrov",
+      "contacts": {
+        "github": "github",
+        "vk": "vk",
+        "facebook": "facebook"
+      },
+      "photos": {
+        "small": "small.jpg",
+        "large": "large.jpg"
+      }
+    },
+    {
+      "id": 3,
+      "lookingForAJob": true,
+      "lookingForAJobDescription": "web2",
+      "fullName": "Ivan Den",
+      "contacts": {
+        "github": "github",
+        "vk": "vk",
+        "facebook": "facebook"
+      },
+      "photos": {
+        "small": "small.jpg",
+        "large": "large.jpg"
+      }
+    }
+  ],
+  "posts": [
+    {
+      "title": "Lorem 1",
+      "id": 1,
+      "postText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem excepturi id inventore nobis, non nulla numquam omnis quasi repudiandae veritatis.",
+      "likes": 1
+    },
+    {
+      "id": 2,
+      "title": "Lorem 2",
+      "postText": "Autem excepturi id inventore nobis, non nulla numquam omnis quasi repudiandae veritatis.",
+      "likes": 0
+    },
+    {
+      "id": 3,
+      "title": "Lorem 3",
+      "postText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, non nulla numquam omnis quasi repudiandae veritatis.",
+      "likes": 0
+    }
+  ],
+  "dialogs": [
+    {
+      "id": 1,
+      "name": "Иван",
+      "messages": [
+        {
+          "id": 1,
+          "message": "Привет!",
+          "isOwnMessage": false
+        },
+        {
+          "id": 3,
+          "message": "Как дела?",
+          "isOwnMessage": false
+        },
+        {
+          "id": 4,
+          "message": "Привет, все замечательно!",
+          "isOwnMessage": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Елизавета",
+      "messages": [
+        {
+          "id": 3,
+          "message": "Привет",
+          "isOwnMessage": false
+        },
+        {
+          "id": 4,
+          "message": "Привет! Чем занимаешься?",
+          "isOwnMessage": true
+        },
+        {
+          "id": 5,
+          "message": "Как дела?"
+        },
+        {
+          "id": 6,
+          "message": "Отлично!",
+          "isOwnMessage": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Евгений",
+      "messages": [
+        {
+          "id": 1,
+          "message": "Добрый день!",
+          "isOwnMessage": false
+        },
+        {
+          "id": 2,
+          "message": "Здравствуйте!",
+          "isOwnMessage": true
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "name": "alukard1",
+      "id": 1,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": "https://cs13.pikabu.ru/avatars/3425/x3425772-1402976383.png",
+        "large": "large"
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": "На работе",
+      "followed": true
+    },
+    {
+      "name": "alukard1",
+      "id": 2,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Москва"
+      },
+      "status": "Отдыхаю",
+      "followed": true
+    },
+    {
+      "name": "alukard",
+      "id": 3,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": "https://yt3.ggpht.com/a-/AAuE7mBQBty1vJ8bUEFHOhY8tUuX-Jpu3xzSPZJMYw=s240-mo-c-c0xffffffff-rj-k-no",
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Санкт-Петербург"
+      },
+      "status": "Работаю",
+      "followed": false
+    },
+    {
+      "name": "lemming",
+      "id": 26094,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": "Статус",
+      "followed": false
+    },
+    {
+      "name": "Kate4658",
+      "id": 26093,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": true
+    },
+    {
+      "name": "foster24",
+      "id": 26092,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "A4i",
+      "id": 26091,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "testapi",
+      "id": 26090,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "baz1232",
+      "id": 26089,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "someLogin123",
+      "id": 26088,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "SKorol",
+      "id": 26087,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "ViktorDorogokuplya",
+      "id": 26086,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "BogdanMarchenkov",
+      "id": 26085,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "vad9",
+      "id": 26084,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "Golden17",
+      "id": 26083,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "Golden",
+      "id": 26082,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "svm_70",
+      "id": 26081,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "muraveva",
+      "id": 26080,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "bluebird",
+      "id": 26079,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "valeriyakaretnikova",
+      "id": 26078,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "Andot1997",
+      "id": 26077,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "Romb1997",
+      "id": 26076,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "TextSocial",
+      "id": 26075,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "Allochka11",
+      "id": 26074,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "Aliexx",
+      "id": 26073,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "DenRainmen",
+      "id": 26072,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": true
+    },
+    {
+      "name": "ant_ktch",
+      "id": 26071,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "Veritate",
+      "id": 26070,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "FrontOneLove",
+      "id": 26069,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "vkaretnikova",
+      "id": 26068,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "valedmonton",
+      "id": 26067,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "vkaret",
+      "id": 26066,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "valkar",
+      "id": 26065,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "valerka",
+      "id": 26064,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "valka",
+      "id": 26063,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "prytuliak",
+      "id": 26062,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": true
+    },
+    {
+      "name": "noonemassive",
+      "id": 26061,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": true
+    },
+    {
+      "name": "FreShch",
+      "id": 26060,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": true
+    },
+    {
+      "name": "polyakog",
+      "id": 26059,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": false
+    },
+    {
+      "name": "mari-bn",
+      "id": 26058,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": null,
+      "followed": true
+    },
+    {
+      "name": "AppTest!!!!!!!!!!!!!!",
+      "id": 26057,
+      "uniqueUrlName": null,
+      "photos": {
+        "small": null,
+        "large": null
+      },
+      "location": {
+        "country": "Россия",
+        "city": "Екатеринбург"
+      },
+      "status": "Hello World!!!!!",
+      "followed": false
     }
   ]
 }
